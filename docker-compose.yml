@@ -1,0 +1,8 @@
+version: "3"
+services:
+  redis-server:
+    image: "redis" # redis image
+  node-app:
+    build: . # construc node based on Dockerfile
+    ports:
+      - "8081:8081" # local-machin:inside-container
